@@ -60,25 +60,25 @@
     </dependencies>
 
     <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.10.1</version>
-            </plugin>
-            <plugin>
-                <groupId>one.jpro</groupId>
-                <artifactId>jpro-maven-plugin</artifactId>
-                <version>${jpro.version}</version>
-                <configuration>
-                    <visible>false</visible>
-                        <JVMArgs>
-                            <!-- <JVMArg>your-args</JVMArg> -->
-                        </JVMArgs>
-                        <mainClass>com.example.inventory/com.example.inventory.controller.Main</mainClass>
-                        <openingPath>/</openingPath>
-                </configuration>
-            </plugin>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.10.1</version>
+        </plugin>
+        <plugin>
+            <groupId>one.jpro</groupId>
+            <artifactId>jpro-maven-plugin</artifactId>
+            <version>${jpro.version}</version>
+            <configuration>
+                <visible>false</visible>
+                    <JVMArgs>
+                        <!-- <JVMArg>your-args</JVMArg> -->
+                    </JVMArgs>
+                    <mainClass>com.example.inventory/com.example.inventory.controller.Main</mainClass>
+                    <openingPath>/</openingPath>
+            </configuration>
+        </plugin>
     </build>
     <pluginRepositories>
         <pluginRepository>
