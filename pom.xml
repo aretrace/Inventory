@@ -6,13 +6,13 @@
 
     <groupId>com.example</groupId>
     <artifactId>Inventory</artifactId>
-    <version>1.1-SNAPSHOT</version>
+    <version>1.0-SNAPSHOT</version>
     <name>Inventory</name>
     <packaging>jar</packaging><!-- JPro -->
 
     <properties>
         <!-- JPro -->
-        <jpro.version>2023.1.0-SNAPSHOT</jpro.version>
+        <jpro.version>2022.1.7</jpro.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
@@ -56,7 +56,7 @@
         </dependency>
 
         <dependency>
-            <groupId>one.jpro</groupId>
+            <groupId>com.sandec.jpro</groupId>
             <artifactId>jpro-webapi</artifactId>
             <version>${jpro.version}</version>
             <scope>compile</scope>
@@ -97,7 +97,7 @@
             <plugin>
                 <groupId>one.jpro</groupId>
                 <artifactId>jpro-maven-plugin</artifactId>
-                <version>${jpro.version}</version>
+                <version>2023.1.0-SNAPSHOT</version>
                 <configuration>
                     <visible>false</visible>
                     <JVMArgs>
